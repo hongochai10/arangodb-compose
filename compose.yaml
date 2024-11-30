@@ -10,7 +10,7 @@ services:
     environment:
       ARANGO_ROOT_PASSWORD: ${PASSWORD}
     ports:
-      - ${HOST_IP}:${PORT}:5829
+      - ${HOST_IP}:${PORT}:8529
     volumes:
       - ${APP_PATH}/data/primary:/data/db
     networks:
